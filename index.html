@@ -1,27 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Adam Michel</title>
-  <link rel="stylesheet" type="text/css" href="/css/styles.css">
-</head>
-<body>
-  <div class="container">
-    <div class="col-md-10 col-md-offset-1">
-      <section class="profile-card">
-        <div class="profile-left">
-          <img  width="300" height="300" src="/images/mugshot.jpeg" alt="Adam Michel's Mugshot Courtesy of Quirky" class="profile-image">
-        </div>
-        <div class="profile-body">
-          <h1>Adam Michel</h1>
-          <h2>Software builder and happiness engineer for startups.</h2>
-          <ul class="social-links">
-            <li><a href="https://github.com/awmichel" title="awmichel on GitHub"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://twitter.com/awmichel" title="@awmichel on Twitter"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://linkedin.com/in/awmichel" title="Adam Michel on LinkedIn"><i class="fa fa-linkedin"></i></a></li>
-          </ul>
-        </div>
-      </section>
-    </div>
-  </div>
-</body>
+  <head>
+    <title>VR Round Table</title>
+    <meta name="description" content="VR Round Table">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="src/index.js"></script>
+  </head>
+  <body>
+    <a-scene stats>
+      <a-entity id="sky"
+        geometry="primitive: sphere; radius: 65;"
+        material="shader: skyGradient; colorTop: #65359c; colorBottom: #29153f; side: back"></a-entity>
+    </a-scene>
+  </body>
 </html>
